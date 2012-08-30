@@ -1,8 +1,13 @@
-
+echo "===================="
+date
+mkdir -p $HOME/backup
 date=`date +%Y.%m.%d`
 for d in .ssh .thunderbird
 do
-    echo Backing up $HOME/$d to $HOME/Backup/$d-$date.tar.gz
-    tar -C $HOME -czf $HOME/Backup/$d-$date.tar.gz $d
+    echo Backing up $HOME/$d to $HOME/backup/$d-$date.tar.gz
+    tar -C $HOME -czf $HOME/backup/$d-$date.tar.gz $d
 done
+date
+echo "===================="
+
 
