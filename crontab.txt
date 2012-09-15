@@ -1,0 +1,4 @@
+0 * * * * /home/lukasz/sources/scripts/crontabHourly.sh
+0 0 * * * /home/lukasz/sources/scripts/crontabDaily.sh
+
+
