@@ -1,4 +1,4 @@
-for d in Muzyka Dokumenty Obrazy Wideo Skrypty Backup
+for d in Muzyka Dokumenty Obrazy Wideo Backup
 do
   src="/home/lukasz/$d"
   dst="/home/lukasz/Dropbox/$d"
