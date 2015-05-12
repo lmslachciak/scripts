@@ -2,6 +2,10 @@ for d in Muzyka Dokumenty Obrazy Wideo Backup
 do
   src="/home/lukasz/$d"
   dst="/home/lukasz/Dropbox/$d"
+  if [ $d == "Muzyka" ]
+  then
+    dst="/home/lukasz/Dropbox/Audio"
+  fi
   #check if there is not link already
   if ! [ -L $src ]
   then
